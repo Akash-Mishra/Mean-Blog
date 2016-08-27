@@ -1,0 +1,11 @@
+{
+  "name": "mean-blog",
+  "version": "1.0.0",
+  "main": "server.js",
+  "author": "Akash-Mishra",
+  "dependencies": {
+    "express": "^4.14.0",
+    "mongoose": "^4.5.10",
+    "passport": "^0.3.2"
+  }
+}
