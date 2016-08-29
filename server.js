@@ -6,6 +6,11 @@ var express = require('express'),
     cors = require('cors'),
     app = express();
 
+var passport = require('passport');
+    require('./server/passport')(passport); // this file is defined below
+    app.use(passport.initialize());
+    app.use(passport.session());
+
     // Environment Configuration
     var env = process.env.NODE_ENV = process.env.NODE_ENV || 'development',
         envConfig = require('./server/env')[env];
